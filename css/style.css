@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background: #edf0f1;
+    background: #fff2e6;
     padding: 80px 0 0;
 }
 
@@ -21,23 +21,46 @@ header {
     top: 0;
     left: 0;
     z-index: 5;
-    background: #25b99a;
+    background: #ffb380;
     box-shadow: 0px 2px 4px rgba(44,62,80,0.15);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    padding: 15px;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    background: #ffb380;
+    box-shadow: 0px 2px 4px rgba(44,62,80,0.15);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+footer p {
+    color: #666666;
+    font-family:'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-indent: 18px;
+    text-align: center;
 }
 
 header input {
     width: 100%;
     height: 50px;
     float: left;
-    color: #fff;
+    color: #666666;
     font-size: 15px;
     font-weight: 400;
     text-indent: 18px;
     padding: 0px 60px 0px 0px;
     background: rgba(255,255,255,0.2);
-    border-radius: 5px 25px 25px 5px;
+    border-radius: 25px 25px 25px 25px;
     border: 0px;
     box-shadow: none;
     outline: none;
@@ -50,19 +73,19 @@ header input {
 }
 
 header input::-webkit-input-placeholder {
-    color: rgba(255,255,255,0.75);
+    color: #666666;
 }
 
 header input:-moz-input-placeholder {
-    color: rgba(255, 255, 255, 0.75);
+    color: #666666;
 }
   
 header input::-moz-input-placeholder {
-    color: rgba(255, 255, 255, 0.75);
+    color: #666666;
 }
   
 header input:-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.75);
+    color: #666666;
 }
 
   header button {
@@ -73,7 +96,7 @@ header input:-ms-input-placeholder {
       right: 15px;
       z-index: 2;
       border-radius: 25px;
-      background: #fff;
+      background: #808080;
       border: 0;
       box-shadow: none;
       outline: none;
@@ -95,7 +118,7 @@ header input:-ms-input-placeholder {
   }
 
   header button svg .fill {
-      fill: #25b99a;
+      fill: #ffb380;
   }
 
  .container {
@@ -115,11 +138,11 @@ header input:-ms-input-placeholder {
       min-height: 50px;
       font-size: 14px;
       font-weight: 500;
-      color: #444;
+      color: #808080;
       line-height: 22px;
 
-      background: #fff;
-      border-radius: 5px;
+      background: #ffd1b3;
+      border-radius: 25px 25px 25px 25px;
       position: relative;
       box-shadow: 0px 1px 2px rgba(44,62,80,0.10);
       margin: 0 0 10px 0;
@@ -163,7 +186,7 @@ header input:-ms-input-placeholder {
       position: absolute;
       top: 10px;
       left: 0;
-      background: #edf0f1;
+      background: #808080;
   }
 
 
@@ -179,7 +202,7 @@ header input:-ms-input-placeholder {
 
   ul.todo li .buttons button.complete svg {
     border-radius: 11px;
-    border: 1.5px solid #25b99a;
+    border: 1.5px solid #ff8533;
 
     -webkit-appearance: fill 0.2 ease;
     -moz-appearance: fill 0.2 ease;
@@ -189,20 +212,20 @@ header input:-ms-input-placeholder {
   }
 
   ul.todo#completed li .buttons button.complete svg {
-    background: #25b99a;
+    background: #ff8533;
     border: 0px;
   }
   
   ul.todo:not(#completed) li .buttons button.complete:hover svg {
-    background: rgba(37, 185, 154, 0.75);
+    background: #ff8533;
   }
   
   ul.todo:not(#completed) li .buttons button.complete:hover svg .fill {
-    fill: #fff;
+    fill: #4d4d4d;
   }
   
   ul.todo#completed li .buttons button.complete svg .fill {
-    fill: #fff;
+    fill: #4d4d4d;
   }
   
   
@@ -217,15 +240,15 @@ header input:-ms-input-placeholder {
   }
 
   ul.todo li .buttons button.remove svg .fill {
-    fill: #c0cecb;
+    fill: #ff8533;
   }
   
   ul.todo li .buttons button.remove:hover svg .fill {
-      fill: #e85656;
+      fill: #ee0c0c;
   }
 
   ul.todo li .buttons button.complete svg .fill {
-    fill: #25b99a;
+    fill: #ff8533;
   }
 
   ul.todo#completed {
